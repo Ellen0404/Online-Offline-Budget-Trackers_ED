@@ -9,6 +9,9 @@
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
   <link rel="stylesheet" href="styles.css">
 
 
@@ -17,18 +20,23 @@
 
 <body>
   <div class="wrapper">
+    <br>
     <div class="total">
-      <div class="total">Your total is: $<span id="total">0</span></div>
+      <div class="total ui center aligned header">Your total is: $<span id="total">0</span></div>
     </div>
 
     <div class="form">
-      <input type="text" id="t-name" placeholder="Name of transaction" />
-      <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+      <div class="ui input focus">
+        <input type="text" id="t-name" placeholder="Name of transaction">
+      </div>
+      <div class="ui input focus">
+        <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
+      </div>
+      <button id="add-btn" class="ui teal button"> Add Funds</button>
+      <button id="sub-btn" class="ui teal button"> Subtract Funds</button>
       <p class="error"></p>
     </div>
-
+    <br>
     <div class="transactions">
       <table>
         <thead>

@@ -5,7 +5,8 @@ const urlsToCache = [
     "/manifest.webmanifest",
     "/styles.css",
     "/icons/icon-192x192.png",
-    "/icons/icon-512x512.png"
+    "/icons/icon-512x512.png",
+    "/background-blank-empty-light-62693.jpg"
 ];
 
 const CACHE_NAME = "static-files-v1";
