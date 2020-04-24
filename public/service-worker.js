@@ -1,10 +1,9 @@
 const urlsToCache = [
     "/",
-    // "/indexDb.js",
+    "/indexDb.js",
     "/index.js",
     "/manifest.webmanifest",
     "/styles.css"
-
 ];
 
 const CACHE_NAME = "static-files-v1";
