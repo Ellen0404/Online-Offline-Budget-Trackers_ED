@@ -3,7 +3,9 @@ const urlsToCache = [
     "/indexDb.js",
     "/index.js",
     "/manifest.webmanifest",
-    "/styles.css"
+    "/styles.css",
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png"
 ];
 
 const CACHE_NAME = "static-files-v1";
@@ -18,7 +20,7 @@ self.addEventListener("install", function (event) {
             return cache.addAll(urlsToCache);
         })
     );
-    self.skipWaiting();
+    //  self.skipWaiting();
 });
 
 // activate
@@ -42,6 +44,7 @@ self.addEventListener("install", function (event) {
 self.addEventListener("fetch", function (event) {
     // cache all get requests to /api routes
     if (event.request.url.includes("/api/")) {
+        console.log("called ----->  " + event.request.url)
         event.respondWith(
             caches.open(DATA_CACHE_NAME).then(cache => {
                 return fetch(event.request)
