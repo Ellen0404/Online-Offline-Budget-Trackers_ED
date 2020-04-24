@@ -17,4 +17,4 @@ $ npm start from CLI
 or use deployed - [Heroku link ](#Link-to-deployed-Heroku-App)
 
 ## Link to deployed Heroku App
-[Workout-Tracker](https://lit-chamber-43751.herokuapp.com/)
+[Online-Offline-Budget-Trackers](https://offlinetrackered.herokuapp.com/)
